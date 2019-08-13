@@ -1,0 +1,15 @@
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <% @articles.each do |article| %>
+      <h3><%= link_to article.title, article_path(article) %></h3>
+       <h5><%= article.content %></h5>
+      <% end %>
+    </div>
+</div>
+
+
+
+
+
